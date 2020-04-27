@@ -3,9 +3,19 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
+<<<<<<< HEAD
     "angular-demo": {
       "projectType": "application",
       "schematics": {},
+=======
+    "angular-9-registration-login-example": {
+      "projectType": "application",
+      "schematics": {
+        "@schematics/angular:component": {
+          "style": "less"
+        }
+      },
+>>>>>>> initial commit
       "root": "",
       "sourceRoot": "src",
       "prefix": "app",
@@ -13,7 +23,11 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
+<<<<<<< HEAD
             "outputPath": "dist/angular-demo",
+=======
+            "outputPath": "dist",
+>>>>>>> initial commit
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -24,7 +38,11 @@
               "src/assets"
             ],
             "styles": [
+<<<<<<< HEAD
               "src/styles.css"
+=======
+              "src/styles.less"
+>>>>>>> initial commit
             ],
             "scripts": []
           },
@@ -62,18 +80,30 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
+<<<<<<< HEAD
             "browserTarget": "angular-demo:build"
           },
           "configurations": {
             "production": {
               "browserTarget": "angular-demo:build:production"
+=======
+            "browserTarget": "angular-9-registration-login-example:build"
+          },
+          "configurations": {
+            "production": {
+              "browserTarget": "angular-9-registration-login-example:build:production"
+>>>>>>> initial commit
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
+<<<<<<< HEAD
             "browserTarget": "angular-demo:build"
+=======
+            "browserTarget": "angular-9-registration-login-example:build"
+>>>>>>> initial commit
           }
         },
         "test": {
@@ -88,7 +118,11 @@
               "src/assets"
             ],
             "styles": [
+<<<<<<< HEAD
               "src/styles.css"
+=======
+              "src/styles.less"
+>>>>>>> initial commit
             ],
             "scripts": []
           }
@@ -110,15 +144,24 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
+<<<<<<< HEAD
             "devServerTarget": "angular-demo:serve"
           },
           "configurations": {
             "production": {
               "devServerTarget": "angular-demo:serve:production"
+=======
+            "devServerTarget": "angular-9-registration-login-example:serve"
+          },
+          "configurations": {
+            "production": {
+              "devServerTarget": "angular-9-registration-login-example:serve:production"
+>>>>>>> initial commit
             }
           }
         }
       }
+<<<<<<< HEAD
     }
   },
   "defaultProject": "angular-demo",
@@ -126,3 +169,8 @@
     "analytics": false
   }
 }
+=======
+    }},
+  "defaultProject": "angular-9-registration-login-example"
+}
+>>>>>>> initial commit

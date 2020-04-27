@@ -3,7 +3,12 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
+<<<<<<< HEAD
   production: false
+=======
+    production: false,
+    apiUrl: 'http://localhost:4000'
+>>>>>>> initial commit
 };
 
 /*
