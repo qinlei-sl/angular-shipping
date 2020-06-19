@@ -1,0 +1,24 @@
+<div *ngFor = "let item of items index as itemId">
+    <h3>{{item.name}}</h3>
+    <h3>{{item.price | currency}}</h3>
+    <h3>{{item.description}}</h3>
+</div>
+<a routerLink="/shipping">
+  <i>shopping</i>
+</a>
+<form [formGroup]="checkoutForm" (ngSubmit)='onSubmit(checkoutForm.value)'>
+    <div>
+      <label for="name">
+        Name
+      </label>
+      <input id="name" type="text" formControlName="name">
+    </div>
+
+    <div>
+      <label for="address">
+        Address
+      </label>
+      <input id="address" type="text" formControlName="address">
+    </div>
+    <button type="submit">purchase</button>
+</form>
