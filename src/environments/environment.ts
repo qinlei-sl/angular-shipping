@@ -8,7 +8,10 @@ export const environment = {
 =======
     production: false,
     apiUrl: 'http://localhost:4000'
+<<<<<<< HEAD
 >>>>>>> initial commit
+=======
+>>>>>>> updated apiUrl to port 4000
 };
 
 /*
